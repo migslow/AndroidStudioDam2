@@ -8,6 +8,7 @@ public class Calculo {
     private static EditText editTextText2;
     private static TextView textViewResultado;
     public static void ButtonCalcular(){
+        int in = 0;
         editTextText2 = ButtonCalcular(R.id.editTextText2);
         textViewResultado = ButtonCalcular(R.id.textViewResultado);
 
