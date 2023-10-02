@@ -18,9 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextText2 = editTextText2(R.id.editTextText2);
+        editTextText2 = findViewById(R.id.editTextText2);
 
-        System.out.println(ButtonCalcular());
+        //Hay que pasar lo que tiene el editTextText2 a int
+        String s = editTextText2.getText().toString();
+        int numero = Integer.parseInt(s);
+
+        System.out.println(ButtonCalcular(numero));
     }
 
 

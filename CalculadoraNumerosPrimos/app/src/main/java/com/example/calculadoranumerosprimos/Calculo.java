@@ -30,5 +30,6 @@ public class Calculo {
             }
             numero++;
         }
+        return null;
     }
 }
