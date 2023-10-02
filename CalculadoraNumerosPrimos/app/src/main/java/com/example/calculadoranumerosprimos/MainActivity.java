@@ -1,23 +1,26 @@
 package com.example.calculadoranumerosprimos;
 
+import static com.example.calculadoranumerosprimos.Calculo.ButtonCalcular;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    public static EditText editTextText2;
+    private static TextView textViewResultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Calculo.ButtonCalcular();
+        editTextText2 = editTextText2(R.id.editTextText2);
+
+        System.out.println(ButtonCalcular());
     }
 
 
