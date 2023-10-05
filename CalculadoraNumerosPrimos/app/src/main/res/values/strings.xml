@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CalculadoraNumerosPrimos</string>
+    <string name="calculadora_de_numeros_primos">CALCULADORA DE NUMEROS PRIMOS</string>
+    <string name="introduce_qu_n_mero_primo_quieres_calcular_por_ejemplo_si_deaseas_saber_el_quinto_n_mero_primo_pon_el_5_y_dale_a_calcular_te_dir_que_el_quinto_es_el_11">Introduce què número primo quieres calcular. Por ejemplo, si deaseas saber el quinto número primo, pon el 5 y dale a calcular. Te dirá que el quinto es el 11</string>
+    <string name="calcular">CALCULAR</string>
 </resources>

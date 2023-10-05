@@ -26,16 +26,25 @@ public class MainActivity extends AppCompatActivity {
         tv2 = findViewById(R.id.textViewEstatura);
         et1 = findViewById(R.id.editTextTextPeso);
         et2 = findViewById(R.id.editTextTextEstatura);
+
+
+
+
+
     }
+
 
     public void clic (View view){
         Intent i = new Intent(this, MainActivity2.class);
+        //coger el peso y añadirlo a los extras
+        i.putExtra("datos", et1.getText().toString());
+        //coger la altura y añadirlo a los extras
+        i.putExtra("datos", et2.getText().toString());
+
 
         startActivity(i);
     }
 
-    public static double calculoIMC(double peso, int estatura){
-        
-    }
+
 
 }

@@ -9,15 +9,16 @@
 
     <TextView
         android:id="@+id/textViewTitulo"
-        android:layout_width="276dp"
-        android:layout_height="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="65dp"
-        android:text="CALCULADORA DE NUMEROS PRIMOS"
+        android:text="@string/calculadora_de_numeros_primos"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,7 +29,7 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="65dp"
-        android:text="Introduce què número primo quieres calcular. Por ejemplo, si deaseas saber el quinto número primo, pon el 5 y dale a calcular. Te dirá que el quinto es el 11"
+        android:text="@string/introduce_qu_n_mero_primo_quieres_calcular_por_ejemplo_si_deaseas_saber_el_quinto_n_mero_primo_pon_el_5_y_dale_a_calcular_te_dir_que_el_quinto_es_el_11"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +54,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="26dp"
         android:onClick="ButtonCalcular"
-        android:text="CALCULAR"
+        android:text="@string/calcular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPosicion"
         tools:ignore="OnClick" />
