@@ -5,7 +5,7 @@
     android:id="@+id/textoEscrito"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="MainActivity">
 
     <TextView
         android:id="@+id/textViewTitulo"
@@ -55,7 +55,8 @@
         android:onClick="ButtonCalcular"
         android:text="CALCULAR"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPosicion" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPosicion"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/textViewResultado"
