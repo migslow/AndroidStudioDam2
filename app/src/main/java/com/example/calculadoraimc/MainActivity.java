@@ -26,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
         tv2 = findViewById(R.id.textViewEstatura);
         et1 = findViewById(R.id.editTextTextPeso);
         et2 = findViewById(R.id.editTextTextEstatura);
-
-
-
-
-
     }
 
 
