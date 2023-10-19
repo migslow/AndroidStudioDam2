@@ -38,9 +38,10 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> {
 
     }
 
+    // Nos devuelve el numero de elementos que hay que mostrar
     @Override
     public int getItemCount() {
-        return 0;
+        return lista.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -50,5 +51,11 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> {
             super(itemView);
             tv = itemView.findViewById(R.id.fila);
         }
+        public void setTV(String s){
+            tv.setText(s);
+        }
+
     }
+
+
 }
