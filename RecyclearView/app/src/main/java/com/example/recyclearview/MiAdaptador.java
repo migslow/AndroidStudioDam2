@@ -27,15 +27,21 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> {
         this.lista = l;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
+
+    // Creamos (inflamos) cada una de los ViewHolders
     @NonNull
     @Override
     public MiAdaptador.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View v = inflater.inflate(R.layout.fila, parent, false);
+        return new ViewHolder(v);
     }
 
+    // Cogemos el datos que esta en la posicion "position" y se lo pasamos al ViewHolder
+    // para que lo muestre
     @Override
     public void onBindViewHolder(@NonNull MiAdaptador.ViewHolder holder, int position) {
-
+        String s = lista.elementAt(position);
+        holder.setTV(s);
     }
 
     // Nos devuelve el numero de elementos que hay que mostrar

@@ -1,6 +1,7 @@
 package com.example.recyclearview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     // VARIABLES
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
-    // private MiAdaptador adaptador
+    private MiAdaptador adaptador;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
         elementos.add("Aragon");
 
         // Creamos nuestro propio adaptador
+        adaptador = new MiAdaptador(this, elementos);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adaptador);
 
     }
 }
